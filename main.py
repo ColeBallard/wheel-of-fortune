@@ -127,7 +127,7 @@ def revealHiddenWord(hidden_puzzle, puzzle, letter):
 
     i = 0
     for c in puzzle:
-        if c == letter.upper() or c == "-":
+        if c == letter.upper() or c == "-" or c == "'":
             hidden_puzzle_list[i] = c
         
         i += 1
