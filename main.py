@@ -415,19 +415,18 @@ def wofFinalRound(puzzles_categories, players):
     return
 
 def main():
-    # welcomeMessage()
+    welcomeMessage()
 
-    # puzzles_categories = readDictionaryFile()
-    # wheel_values = readWheelTxtFile()
-    # players =  getPlayerInfo()
-    players = [{"name":"George", "round money":0, "total money":0}, {"name":"Peter", "round money":0, "total money":0}, {"name":"Amy", "round money":0, "total money":0}]   
-    chooseFinalRoundPlayer(players)
+    puzzles_categories = readDictionaryFile()
+    wheel_values = readWheelTxtFile()
+    players =  getPlayerInfo()
+    # players = [{"name":"George", "round money":0, "total money":0}, {"name":"Peter", "round money":0, "total money":0}, {"name":"Amy", "round money":0, "total money":0}]   
 
-    # for i in range(maxrounds):
-    #     if i in [0,1]:
-    #         wofRound(puzzles_categories, wheel_values, players)
-    #     else:
-    #         wofFinalRound(puzzles_categories, players)
+    for i in range(maxrounds):
+        if i in [0, 1]:
+            wofRound(puzzles_categories, wheel_values, players)
+        else:
+            wofFinalRound(puzzles_categories, players)
      
 if __name__ == "__main__":
     main()
