@@ -18,7 +18,6 @@ git clone https://github.com/ColeBallard/wheel-of-fortune
 2. Install the latest version of python.
 [Downloads](https://www.python.org/downloads/)
 
-
 3. Run the python file.
 ```shell
 C:/Users/YourName/wheel-of-fortune/main.py
